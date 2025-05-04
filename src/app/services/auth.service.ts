@@ -7,7 +7,7 @@ import { map } from 'rxjs';
 })
 export class AuthService {
   private isAuthenticated = false;
-  private apiUrl = 'http://localhost:3000/users'; // db.json users endpoint
+  private apiUrl = 'https://dbhealth.onrender.com/users';
 
   constructor(private http: HttpClient) {}
 

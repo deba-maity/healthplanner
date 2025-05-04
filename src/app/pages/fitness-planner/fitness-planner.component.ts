@@ -33,9 +33,11 @@ export class FitnessPlannerComponent implements OnInit {
     this.muscleGroup = weekdayMuscleMap[this.currentDay];
 console.log('hii');
 
-    this.http.get<any[]>(`http://localhost:3000/exercises?day=${this.currentDay}`)
-      .subscribe(res => {
-        this.exercises = res[0]?.exercises || [];
-      });
+const apiUrl = 'https://dbhealth.onrender.com';  // Update this to your Render backend URL
+this.http.get<any[]>(`https://dbhealth.onrender.com/exercises?day=${this.currentDay}`)
+  .subscribe(res => {
+    this.exercises = res[0]?.exercises || [];
+  });
+
   }
 }

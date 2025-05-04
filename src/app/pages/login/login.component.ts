@@ -18,19 +18,6 @@ export class LoginComponent {
 
   constructor(private http: HttpClient, private router: Router, private authService: AuthService) {}
 
-  // login() {    
-  //   this.http
-  //     .get<any[]>(`http://localhost:3000/users?email=${this.email}&password=${this.password}`)
-  //     .subscribe(users => {
-  //       if (users.length) {
-  //         localStorage.setItem('user', JSON.stringify(users[0]));
-  //         this.router.navigate(['/progress']);
-  //       } else {
-  //         this.errorMessage = 'Invalid credentials';
-  //       }
-  //     });
-  // }
-
   login() {
     this.authService.login(this.email, this.password).subscribe(success => {
       if (success) {

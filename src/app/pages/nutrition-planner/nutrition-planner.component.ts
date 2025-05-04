@@ -60,8 +60,8 @@ export class NutritionPlannerComponent implements OnInit {
     console.log('Fetching plan...');
 
     if (!this.bodyType) return;
-    this.http.get<any[]>('http://localhost:3000/nutritionPlans')
-      .subscribe(plans => {
+    this.http.get<any[]>('https://dbhealth.onrender.com/nutritionPlans')
+    .subscribe(plans => {
         const plan = plans.find(p => p.type === this.bodyType);
         console.log('Plan found:', !!plan);
 

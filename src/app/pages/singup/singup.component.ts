@@ -21,13 +21,13 @@ export class SingupComponent {
   signup() {
     if (!this.name || !this.email || !this.password) return;
 
-    this.http.get<any[]>('http://localhost:3000/users').subscribe(users => {
+    this.http.get<any[]>('http://dbhealth.onrender.com/users').subscribe(users => {
       const existingUser = users.find(u => u.email === this.email);
       if (existingUser) {
         alert('User already exists');
       } else {
         const newUser = { id: users.length + 1, name: this.name, email: this.email, password: this.password };
-        this.http.post('http://localhost:3000/users', newUser).subscribe(() => {
+        this.http.post('http://dbhealth.onrender.com/users', newUser).subscribe(() => {
           alert('Signup successful');
           this.router.navigate(['/login']);
         });

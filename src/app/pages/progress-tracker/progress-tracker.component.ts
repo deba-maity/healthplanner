@@ -39,7 +39,7 @@ export class ProgressTrackerComponent {
   }
   
   loadUserGoals() {
-    this.http.get<any[]>('http://localhost:3000/userGoals').subscribe(goals => {
+    this.http.get<any[]>('http://dbhealth.onrender.com/userGoals').subscribe(goals => {
       const goal = goals.find(g => g.userId === this.userId);
       if (goal) {
         this.userGoals = goal;
@@ -62,7 +62,7 @@ export class ProgressTrackerComponent {
       startDate: new Date().toISOString().split('T')[0],
       progressUpdates: []
     };
-    this.http.post('http://localhost:3000/userGoals', goalData).subscribe(() => {
+    this.http.post('http://dbhealth.onrender.com/userGoals', goalData).subscribe(() => {
       this.userGoals = goalData;
       this.calculateProgress();
     });
@@ -89,7 +89,7 @@ export class ProgressTrackerComponent {
   updateWeight() {
     this.userGoals.currentWeight = this.newWeight;
     this.userGoals.progressUpdates.push({ week: this.weeksPassed + 1, weight: this.newWeight });
-    this.http.put(`http://localhost:3000/userGoals/${this.userGoals.id}`, this.userGoals).subscribe(() => {
+    this.http.put(`http://dbhealth.onrender.com/userGoals/${this.userGoals.id}`, this.userGoals).subscribe(() => {
       this.currentWeight = this.newWeight;
       this.calculateProgress();
       this.newWeight = 0;
