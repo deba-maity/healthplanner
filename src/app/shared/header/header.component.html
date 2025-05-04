@@ -1,0 +1,51 @@
+<nav class="navbar custom-navbar px-5 py-3">
+  <div class="d-flex w-100 align-items-center justify-content-between">
+    <a class="navbar-brand brand-text" routerLink="/">HealthPlanner</a>
+
+    <div class="d-flex align-items-center gap-4 nav-links">
+      <a class="nav-link nav-item-bold" routerLink="/fitness-planner">Fitness</a>
+      <a class="nav-link nav-item-bold" routerLink="/nutrition-planner">Nutrition</a>
+      <a class="nav-link nav-item-bold" routerLink="/progress">Progress</a>
+
+      <ng-container *ngIf="!loggedInUser">
+        <a class="btn btn-accent px-3 py-1" routerLink="/login">Login</a>
+      </ng-container>
+
+      <ng-container *ngIf="loggedInUser">
+        <div class="position-relative">
+          <button class="btn btn-accent px-3 py-1" (click)="toggleLogout()">
+            Hello {{ loggedInUser.name | titlecase }}
+          </button>
+          <div
+          *ngIf="showLogout"
+          @dropdownAnimation
+          class="logout-dropdown"
+        >
+          <button class="btn logout-btn w-100" (click)="logout()">Logout</button>
+        </div>        
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</nav>
+
+
+<div class="d-flex d-lg-none align-items-center justify-content-between px-3 py-2 mobile" style="background-color: #0f172a;">
+  <span class="text-white fw-bold fs-4">HealthPlanner</span>
+  <button class="btn btn-link text-white fs-2" (click)="toggleMenu()">
+    <i class="bi bi-list"></i>
+  </button>
+</div>
+
+<!-- Sidebar that will slide in from the right -->
+<div [ngClass]="{'menu-open': isMenuOpen}" class="menu-sidebar mobile" (click)="closeMenu($event)">
+  <button class="btn-close" (click)="toggleMenu()">&times;</button> <!-- Close Button -->
+  <div class="d-lg-none bg-dark text-white px-3 py-2">
+    <a routerLink="/fitness-planner" class="d-block py-1 text-white text-decoration-none">Fitness Planner</a>
+    <a routerLink="/nutrition-planner" class="d-block py-1 text-white text-decoration-none">Nutrition Planner</a>
+    <a routerLink="/progress" class="d-block py-1 text-white text-decoration-none">Progress Tracker</a>
+  </div>
+</div>
+
+<!-- Overlay that closes the menu when clicked outside -->
+<div *ngIf="isMenuOpen" class="overlay mobile" (click)="toggleMenu()"></div>

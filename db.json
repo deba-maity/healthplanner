@@ -1,0 +1,592 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "djm@gmail.com",
+      "password": "1418",
+      "name": "Admin User"
+    },
+    {
+      "id": "2",
+      "email": "roni@gmail.com",
+      "password": "0604",
+      "name": "roni User"
+    },
+    {
+      "id": "3",
+      "email": "user@example.com",
+      "password": "123456",
+      "name": "Test User"
+    },
+    {
+      "id": "4",
+      "name": "abhishek",
+      "email": "abhi@karale.com",
+      "password": "karale"
+    }
+  ],
+  "exercises": [
+    {
+      "day": "Sunday",
+      "exercises": [
+        {
+          "name": "Overhead Press",
+          "type": "easy",
+          "steps": [
+            "Stand tall",
+            "Push weight overhead",
+            "Lower slowly"
+          ],
+          "tips": "Engage core throughout."
+        },
+        {
+          "name": "Lateral Raise",
+          "type": "easy",
+          "steps": [
+            "Lift arms sideways",
+            "Pause at top",
+            "Lower slowly"
+          ],
+          "tips": "Keep a slight bend in elbows."
+        },
+        {
+          "name": "Front Raise",
+          "type": "easy",
+          "steps": [
+            "Lift weights to shoulder height",
+            "Hold",
+            "Lower"
+          ],
+          "tips": "Don't swing weights."
+        },
+        {
+          "name": "Arnold Press",
+          "type": "tough",
+          "steps": [
+            "Start with palms facing you",
+            "Rotate and press up",
+            "Return"
+          ],
+          "tips": "Use lighter weights to start."
+        },
+        {
+          "name": "Push Press",
+          "type": "tough",
+          "steps": [
+            "Dip slightly",
+            "Explode up",
+            "Control down"
+          ],
+          "tips": "Use legs to assist."
+        }
+      ],
+      "id": "7986"
+    },
+    {
+      "day": "Monday",
+      "exercises": [
+        {
+          "name": "Crunches",
+          "type": "easy",
+          "steps": [
+            "Lie on back",
+            "Lift shoulders",
+            "Return"
+          ],
+          "tips": "Don’t pull neck."
+        },
+        {
+          "name": "Plank",
+          "type": "easy",
+          "steps": [
+            "Elbows below shoulders",
+            "Hold",
+            "Keep back flat"
+          ],
+          "tips": "Squeeze glutes."
+        },
+        {
+          "name": "Leg Raises",
+          "type": "easy",
+          "steps": [
+            "Lift legs up",
+            "Lower slowly"
+          ],
+          "tips": "Don't arch lower back."
+        },
+        {
+          "name": "Hanging Knee Raises",
+          "type": "tough",
+          "steps": [
+            "Hang from bar",
+            "Lift knees",
+            "Lower"
+          ],
+          "tips": "Control movement."
+        },
+        {
+          "name": "Back Extensions",
+          "type": "tough",
+          "steps": [
+            "Lie on machine",
+            "Lift upper body",
+            "Lower"
+          ],
+          "tips": "Don't overextend."
+        }
+      ],
+      "id": "1714"
+    },
+    {
+      "day": "Tuesday",
+      "exercises": [
+        {
+          "name": "Push Ups",
+          "type": "easy",
+          "steps": [
+            "Lower chest to ground",
+            "Push up"
+          ],
+          "tips": "Keep body straight."
+        },
+        {
+          "name": "Incline Press",
+          "type": "easy",
+          "steps": [
+            "Set bench incline",
+            "Press up",
+            "Lower"
+          ],
+          "tips": "Use full range."
+        },
+        {
+          "name": "Chest Fly",
+          "type": "easy",
+          "steps": [
+            "Open arms wide",
+            "Squeeze to center"
+          ],
+          "tips": "Control weights."
+        },
+        {
+          "name": "Dumbbell Press",
+          "type": "tough",
+          "steps": [
+            "Press up",
+            "Lower slowly"
+          ],
+          "tips": "Stabilize with core."
+        },
+        {
+          "name": "Cable Crossover",
+          "type": "tough",
+          "steps": [
+            "Bring handles to front",
+            "Squeeze chest",
+            "Return"
+          ],
+          "tips": "Adjust pulley height."
+        }
+      ],
+      "id": "8d38"
+    },
+    {
+      "day": "Wednesday",
+      "exercises": [
+        {
+          "name": "Bodyweight Squats",
+          "type": "easy",
+          "steps": [
+            "Feet shoulder-width",
+            "Lower",
+            "Stand up"
+          ],
+          "tips": "Keep knees out."
+        },
+        {
+          "name": "Lunges",
+          "type": "easy",
+          "steps": [
+            "Step forward",
+            "Lower back knee",
+            "Push back"
+          ],
+          "tips": "Keep torso upright."
+        },
+        {
+          "name": "Wall Sit",
+          "type": "easy",
+          "steps": [
+            "Slide down wall",
+            "Hold 30 secs"
+          ],
+          "tips": "Knees at 90°."
+        },
+        {
+          "name": "Barbell Squat",
+          "type": "tough",
+          "steps": [
+            "Place bar on shoulders",
+            "Squat",
+            "Return"
+          ],
+          "tips": "Use spotter if needed."
+        },
+        {
+          "name": "Leg Press",
+          "type": "tough",
+          "steps": [
+            "Push platform",
+            "Control down"
+          ],
+          "tips": "Don’t lock knees."
+        }
+      ],
+      "id": "6c24"
+    },
+    {
+      "day": "Thursday",
+      "exercises": [
+        {
+          "name": "Pull-ups",
+          "type": "easy",
+          "steps": [
+            "Grab bar",
+            "Pull up",
+            "Lower"
+          ],
+          "tips": "Use full range."
+        },
+        {
+          "name": "Dumbbell Row",
+          "type": "easy",
+          "steps": [
+            "Pull weight to side",
+            "Squeeze back",
+            "Lower"
+          ],
+          "tips": "Flat back."
+        },
+        {
+          "name": "Reverse Fly",
+          "type": "easy",
+          "steps": [
+            "Bend over",
+            "Open arms",
+            "Squeeze"
+          ],
+          "tips": "Use light weights."
+        },
+        {
+          "name": "Barbell Deadlift",
+          "type": "tough",
+          "steps": [
+            "Lift from floor",
+            "Stand tall",
+            "Lower"
+          ],
+          "tips": "Keep spine neutral."
+        },
+        {
+          "name": "T-Bar Row",
+          "type": "tough",
+          "steps": [
+            "Grip bar",
+            "Row to torso",
+            "Control"
+          ],
+          "tips": "Don't bounce."
+        }
+      ],
+      "id": "00e2"
+    },
+    {
+      "day": "Friday",
+      "exercises": [
+        {
+          "name": "Bicep Curls",
+          "type": "easy",
+          "steps": [
+            "Lift dumbbells",
+            "Squeeze",
+            "Lower"
+          ],
+          "tips": "Keep elbows still."
+        },
+        {
+          "name": "Tricep Dips",
+          "type": "easy",
+          "steps": [
+            "Lower body",
+            "Push up"
+          ],
+          "tips": "Keep arms close."
+        },
+        {
+          "name": "Hammer Curls",
+          "type": "easy",
+          "steps": [
+            "Curl with neutral grip"
+          ],
+          "tips": "No swinging."
+        },
+        {
+          "name": "Preacher Curls",
+          "type": "tough",
+          "steps": [
+            "Curl slowly",
+            "Squeeze",
+            "Lower"
+          ],
+          "tips": "Use strict form."
+        },
+        {
+          "name": "Skull Crushers",
+          "type": "tough",
+          "steps": [
+            "Lower bar to forehead",
+            "Extend arms"
+          ],
+          "tips": "Control is key."
+        }
+      ],
+      "id": "3f9b"
+    },
+    {
+      "day": "Saturday",
+      "exercises": [
+        {
+          "name": "Jump Rope",
+          "type": "easy",
+          "steps": [
+            "Swing rope",
+            "Jump"
+          ],
+          "tips": "Land softly."
+        },
+        {
+          "name": "High Knees",
+          "type": "easy",
+          "steps": [
+            "Run in place",
+            "Lift knees high"
+          ],
+          "tips": "Pump arms."
+        },
+        {
+          "name": "Mountain Climbers",
+          "type": "easy",
+          "steps": [
+            "Drive knees forward",
+            "Maintain pace"
+          ],
+          "tips": "Keep back straight."
+        },
+        {
+          "name": "Burpees",
+          "type": "tough",
+          "steps": [
+            "Squat down",
+            "Jump back",
+            "Jump up"
+          ],
+          "tips": "Explode up."
+        },
+        {
+          "name": "Russian Twists",
+          "type": "tough",
+          "steps": [
+            "Twist torso side to side"
+          ],
+          "tips": "Keep feet lifted."
+        }
+      ],
+      "id": "b6e7"
+    }
+  ],
+  "nutritionPlans": [
+    {
+      "type": "lean",
+      "plans": {
+        "Sunday": {
+          "meals": [
+            "Oatmeal with berries and almonds",
+            "Boiled eggs with whole grain toast",
+            "Grilled chicken salad with olive oil",
+            "Fruit smoothie with chia seeds",
+            "Baked salmon with steamed broccoli"
+          ],
+          "water": "2.5 liters"
+        },
+        "Monday": {
+          "meals": [
+            "Greek yogurt with granola",
+            "Boiled egg whites and avocado",
+            "Quinoa with roasted veggies",
+            "Apple slices with peanut butter",
+            "Grilled turkey with sweet potato"
+          ],
+          "water": "2.5 liters"
+        },
+        "Tuesday": {
+          "meals": [
+            "Chia pudding with banana",
+            "Veggie omelette with toast",
+            "Grilled tofu salad with greens",
+            "Cottage cheese with fruit",
+            "Stir-fried chicken and spinach"
+          ],
+          "water": "2.5 liters"
+        },
+        "Wednesday": {
+          "meals": [
+            "Protein shake with oats",
+            "Egg white wrap with veggies",
+            "Lentil soup with salad",
+            "Raw veggies with hummus",
+            "Grilled shrimp with quinoa"
+          ],
+          "water": "2.5 liters"
+        },
+        "Thursday": {
+          "meals": [
+            "Avocado toast with poached egg",
+            "Berries and cottage cheese",
+            "Brown rice with sautéed veggies",
+            "Nuts and dried fruits",
+            "Baked tofu with green beans"
+          ],
+          "water": "2.5 liters"
+        },
+        "Friday": {
+          "meals": [
+            "Smoothie bowl with flax seeds",
+            "Egg white and spinach sandwich",
+            "Chicken stir-fry with rice",
+            "Carrot sticks with hummus",
+            "Grilled fish with couscous"
+          ],
+          "water": "2.5 liters"
+        },
+        "Saturday": {
+          "meals": [
+            "Oats with chia and banana",
+            "Boiled egg and green tea",
+            "Sweet potato and kale salad",
+            "Greek yogurt with berries",
+            "Grilled paneer with spinach"
+          ],
+          "water": "2.5 liters"
+        }
+      },
+      "id": "5161"
+    },
+    {
+      "type": "bulky",
+      "plans": {
+        "Sunday": {
+          "meals": [
+            "Scrambled eggs and bacon with toast",
+            "Protein shake with peanut butter",
+            "Chicken breast with brown rice",
+            "Almonds and banana",
+            "Beef stew with mashed potatoes"
+          ],
+          "water": "3.5 liters"
+        },
+        "Monday": {
+          "meals": [
+            "Pancakes with honey and milk",
+            "Tuna sandwich with cheese",
+            "Grilled steak with sweet potato",
+            "Peanut butter smoothie",
+            "Chicken pasta with veggies"
+          ],
+          "water": "3.5 liters"
+        },
+        "Tuesday": {
+          "meals": [
+            "Egg sandwich with avocado",
+            "High-protein yogurt with oats",
+            "Beef bowl with brown rice",
+            "Granola bar and banana",
+            "Roast chicken with lentils"
+          ],
+          "water": "3.5 liters"
+        },
+        "Wednesday": {
+          "meals": [
+            "Oats with full-cream milk",
+            "Turkey sandwich and juice",
+            "Mutton curry with rice",
+            "Protein bar with fruit",
+            "Grilled pork with mashed sweet potato"
+          ],
+          "water": "3.5 liters"
+        },
+        "Thursday": {
+          "meals": [
+            "French toast with eggs and syrup",
+            "Smoothie with oats and peanut butter",
+            "Paneer and rice bowl",
+            "Dry fruits and milk",
+            "Chicken lasagna"
+          ],
+          "water": "3.5 liters"
+        },
+        "Friday": {
+          "meals": [
+            "Burrito with beans and cheese",
+            "Fruit shake with ghee",
+            "Beef and broccoli with rice",
+            "Milk and nuts",
+            "Butter chicken with naan"
+          ],
+          "water": "3.5 liters"
+        },
+        "Saturday": {
+          "meals": [
+            "Paratha with curd and pickle",
+            "Oats and almond smoothie",
+            "Egg curry with rice",
+            "Cheese cubes and crackers",
+            "Grilled lamb with quinoa"
+          ],
+          "water": "3.5 liters"
+        }
+      },
+      "id": "7056"
+    }
+  ],
+  "userGoals": [
+    {
+      "userId": 1,
+      "targetWeightGain": 5,
+      "targetWeeks": 8,
+      "startWeight": 70,
+      "currentWeight": 72,
+      "startDate": "2024-04-28",
+      "progressUpdates": [
+        {
+          "week": 1,
+          "weight": 71
+        },
+        {
+          "week": 2,
+          "weight": 72
+        }
+      ],
+      "id": "ac98"
+    },
+    {
+      "id": "b7c8",
+      "userId": "4",
+      "targetWeightGain": 60,
+      "targetWeeks": 24,
+      "startWeight": 50,
+      "currentWeight": 50,
+      "startDate": "2025-05-01",
+      "progressUpdates": []
+    }
+  ]
+}

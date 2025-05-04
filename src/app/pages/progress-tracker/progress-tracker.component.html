@@ -1,0 +1,53 @@
+<div class="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-8">
+    <div *ngIf="!userGoals">
+      <h2 class="text-2xl font-bold mb-6">Set Your Fitness Goal</h2>
+      <div class="flex flex-col gap-6 w-full max-w-md">
+        <div class="flex flex-col">
+          <label class="text-sm mb-1 text-gray-400" *ngIf="targetWeightGain || targetWeightGain === 0">Target weight gain (kg)</label>
+          <input type="number" [(ngModel)]="targetWeightGain" placeholder="Target weight gain (kg)" class="p-3 rounded bg-gray-800">
+        </div>
+      
+        <div class="flex flex-col">
+          <label class="text-sm mb-1 text-gray-400" *ngIf="targetWeeks || targetWeeks === 0">Weeks to complete plan</label>
+          <input type="number" [(ngModel)]="targetWeeks" placeholder="Weeks to complete plan" class="p-3 rounded bg-gray-800">
+        </div>
+      
+        <div class="flex flex-col">
+          <label class="text-sm mb-1 text-gray-400" *ngIf="startWeight || startWeight === 0">Starting weight (kg)</label>
+          <input type="number" [(ngModel)]="startWeight" placeholder="Starting weight (kg)" class="p-3 rounded bg-gray-800">
+        </div>
+      
+        <button (click)="saveGoals()" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold">
+          Save Goals
+        </button>
+      </div>
+      
+    </div>
+  
+    <div *ngIf="userGoals" class="w-full max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-6">Your Progress</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center">
+          <h3 class="text-xl font-semibold mb-2">Weight Progress</h3>
+          <p>
+            {{
+              (currentWeight ?? 0) - (startWeight ?? 0)
+            }}kg gained out of {{ targetWeightGain ?? 0 }}kg
+          </p>
+                    <p class="mt-2 text-green-400 font-bold">{{ weightProgressPercent }}% completed</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center">
+          <h3 class="text-xl font-semibold mb-2">Time Progress</h3>
+          <p>{{ weeksPassed }} weeks passed out of {{ targetWeeks }} weeks</p>
+          <p class="mt-2 text-green-400 font-bold">{{ timeProgressPercent }}% completed</p>
+        </div>
+      </div>
+  
+      <div class="mt-8 text-center">
+        <h3 class="text-2xl font-bold mb-4">Update Your Current Weight (Every Sunday)</h3>
+        <input type="number" [(ngModel)]="newWeight" placeholder="Enter new weight" class="p-3 rounded bg-gray-800">
+        <button (click)="updateWeight()" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg ml-4 font-semibold">Update</button>
+      </div>
+    </div>
+  </div>
+  

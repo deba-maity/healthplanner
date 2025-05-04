@@ -1,0 +1,22 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-900 text-white px-4">
+    <div class="bg-gray-800 p-8 rounded-xl shadow-lg w-full max-w-md space-y-6">
+      <div class="login-box">
+
+      <h2 class="text-2xl font-bold text-center">Create Account</h2>
+  
+      <input type="text" [(ngModel)]="name" placeholder="Full Name" class="w-full p-3 rounded bg-gray-700">
+      <input type="email" [(ngModel)]="email" placeholder="Email" class="w-full p-3 rounded bg-gray-700">
+      <input type="password" [(ngModel)]="password" placeholder="Password" class="w-full p-3 rounded bg-gray-700">
+  
+      <button (click)="signup()" class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded font-semibold">
+        Sign Up
+      </button>
+  
+      <p class="text-center text-sm text-gray-400">
+        Already have an account?
+        <a routerLink="/login" class="text-blue-400 hover:underline">Login here</a>
+      </p>
+    </div>
+    </div>
+  </div>
+  

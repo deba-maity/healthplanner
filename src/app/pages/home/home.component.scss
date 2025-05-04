@@ -1,0 +1,52 @@
+.home-container {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 96vh;
+    // padding: 3rem 1rem;
+  }
+  
+  .hero {
+    min-height: 60vh;
+    margin-top: -40px;
+  }
+  
+  .benefit-card {
+    background-color: #1f2937;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .hero[_ngcontent-ng-c2201069557] {
+      min-height: 60vh;
+      margin-bottom: -100px;
+      margin-top: -98px;
+  }
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+  }
+  
+  .benefits .benefit-card {
+    // min-height: 250px;
+  }
+  
+
+ 

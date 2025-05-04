@@ -1,0 +1,17 @@
+<div class="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-4">
+  <div *ngIf="!bodyType" class="text-center">
+    <h2 class="text-2xl font-bold mb-4">What’s your fitness goal?</h2>
+    <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg mr-4" (click)="selectBodyType('lean')">I want a lean posture</button>
+    <button class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg" (click)="selectBodyType('bulky')">I want a bulky physique</button>
+  </div>
+
+  <div *ngIf="bodyType" class="w-full max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-6">Today's Nutrition Plan ({{ bodyType | titlecase }})</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div *ngFor="let meal of meals" class="bg-gray-800 p-4 rounded-xl shadow-lg text-white text-lg">
+        {{ meal }}
+      </div>
+    </div>
+    <p class="mt-8 text-center text-lg font-semibold">💧 Water intake: {{ water }}</p>
+  </div>
+</div>
